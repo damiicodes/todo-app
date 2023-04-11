@@ -1,6 +1,12 @@
 from modules import todo_functionsv2
 import PySimpleGUI as sg
 import time
+import os
+
+if not os.path.exists('todos.txt'):
+    with open('todos.txt', 'w') as file:
+        pass
+
 
 sg.theme('163537Dark')
 
